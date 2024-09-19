@@ -13,6 +13,17 @@ header{
     flex: 1;
 }
 
+button{
+  background-color: lavender;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
 .right-header{
     display: flex;
