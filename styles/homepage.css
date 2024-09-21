@@ -18,7 +18,8 @@
 .text-container{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin:auto;
+    width: auto;
 }
 
 .intro{
