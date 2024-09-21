@@ -8,7 +8,8 @@
 }
 
 .lumia{
-    width:600px;
+    width:auto;
+    max-width: 50%;
     margin-top:25px;
     margin-bottom: 25px;
     border-radius: 25px;
