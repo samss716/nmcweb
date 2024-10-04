@@ -21,11 +21,11 @@ header{
     flex: 1;
 }
 
-button{
+.right-header button{
   background-color: lavender;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   margin: 4px 2px;
