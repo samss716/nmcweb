@@ -1,4 +1,14 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family:"Gupter", serif;
+    margin:0;
+    padding:0;
+}
 .main-container{
     display: flex;
     justify-content: flex-start;
