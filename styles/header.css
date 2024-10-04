@@ -7,6 +7,14 @@ header{
     margin-bottom: 0;
     font-size: 18px;
     font-family: "Gupter", serif;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header .Logo{
+    width:80px;
+    height: auto;
 }
 
 .left-header{
@@ -34,7 +42,7 @@ button{
     text-decoration: none;
     flex:1;
     justify-content: end;
-    gap: 18px;
+    gap: 1rem;
     margin-right: 25px;
 }
 
