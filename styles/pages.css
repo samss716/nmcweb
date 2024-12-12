@@ -100,3 +100,235 @@
   }
 
 
+/* queries */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Logo {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .abt-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt-pic {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .img-container {
+        height: auto;
+        margin: 0;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .abt-p {
+        margin: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cabinet {
+        text-align: center;
+    }
+
+    .cabinet img {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+    }
+
+    .grid-container-1,
+    .grid-container-2 {
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item-1,
+    .grid-item-2 {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .flyer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flyer-container img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    footer button {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .Logo {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .abt-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .abt-pic {
+        width: 50%;
+        height: auto;
+        margin: 0;
+    }
+
+    .img-container {
+        height: auto;
+        margin-left: 20px;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .abt-p {
+        font-size: 18px;
+        margin: 20px;
+        text-align: left;
+    }
+
+    .cabinet {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .cabinet img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .grid-container-1,
+    .grid-container-2 {
+        width: 70%;
+        margin: 30px auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item-1,
+    .grid-item-2 {
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    .flyer-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .flyer-container img {
+        width: 200px;
+    }
+
+    footer button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 30px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .abt-container {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .abt-pic {
+        width: 45%;
+        margin: 0;
+    }
+
+    .img-container {
+        height: 420px;
+        margin-left: 30px;
+    }
+
+    .abt-p {
+        font-size: 20px;
+        margin: 30px;
+    }
+
+    .cabinet {
+        margin: 50px auto;
+    }
+
+    .cabinet img {
+        width: 250px;
+        height: 250px;
+        margin: 15px;
+    }
+
+    .grid-container-1,
+    .grid-container-2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item-1,
+    .grid-item-2 {
+        padding: 40px;
+        font-size: 25px;
+    }
+
+    .flyer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .flyer-container img {
+        width: 300px;
+    }
+
+    footer button {
+        font-size: 25px;
+    }
+}
