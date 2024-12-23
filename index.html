@@ -48,13 +48,14 @@
        <image class = "lumia" src="nmcmedia/lumia_music_2023_untitled_0.jpg"></image>
 
        <div class="text-container">
-           <script>
-      // create a new hydra-synth instance
-      var hydra = new Hydra({
-        canvas: document.getElementById("myCanvas"),
-        detectAudio: false
-      })
-       osc(10, 0.1, 0.8).rotate(0, 0.1).kaleid().color(-1, 1).out()
+           
+       <script class="hydra">
+          // create a new hydra-synth instance
+          var hydra = new Hydra({
+          canvas: document.getElementById("myCanvas"),
+          detectAudio: false
+          })
+           osc(10, 0.1, 0.8).rotate(0, 0.1).kaleid().color(-1, 1).out()
         </script>
            
         <h1 class = "intro">Delve into the world of New Media</h1>
