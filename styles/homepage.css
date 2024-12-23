@@ -30,7 +30,6 @@ body{
     flex-direction: column;
     margin:auto;
     width: auto;
-    border-style:dotted;
 }
 
 #myCanvas{
