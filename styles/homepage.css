@@ -25,6 +25,10 @@ body{
     border-radius: 25px;
 }
 
+.hydra{
+    width: 50%;
+}
+
 .text-container{
     display: flex;
     flex-direction: column;
