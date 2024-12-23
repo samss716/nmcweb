@@ -30,6 +30,11 @@ body{
     flex-direction: column;
     margin:auto;
     width: auto;
+    border-style:dotted;
+}
+
+#myCanvas{
+    z-index: -1;
 }
 
 .intro{
@@ -37,6 +42,7 @@ body{
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
+    z-index: 1;
 }
 
 .intro-blurb{
@@ -44,6 +50,7 @@ body{
     text-align: center;
     padding-left: 60px;
     padding-right: 60px;
+    z-index:1;
 }
 
 .body-container{
