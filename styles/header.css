@@ -6,18 +6,48 @@ header{
     flex-direction: row;
     margin-bottom: 0;
     font-size: 18px;
-    font-family: "Gupter", serif;
-    
+    font-family: "Share Tech Mono", monospace;
+    border-style: groove;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(51, 183, 39);
+}
+
+.cat{
+    width: 400px;
+    height: 199px;
+    margin: .5px auto 0;
+
+}
+
+.walking {
+  background-image: url("../nmcmedia/cat_tiles.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: walk-animation 2s steps(12) infinite;
+}
+
+@keyframes walk-animation{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 0 -2391px;
+    }
 }
 
 .left-header .Logo{
-    width:80px;
+    width:100px;
     height: auto;
 }
 
-.left-header{
+
+
+.middle-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
     flex: 1;
 }
 
@@ -31,7 +61,7 @@ header{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  font-family: "Gupter", serif;
+  font-family: "Share Tech Mono", monospace;
   font-size: 18px;
 }
 
@@ -40,7 +70,6 @@ header{
     padding-top: 15px;
     align-items: center;
     text-decoration: none;
-    flex:1;
     justify-content: end;
     gap: 1rem;
     margin-right: 25px;
@@ -55,3 +84,4 @@ hr{
     background-color: black;
     border: .001px solid;
 }
+
