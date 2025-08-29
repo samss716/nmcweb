@@ -26,11 +26,37 @@ body{
     border-radius: 25px;
 }
 
-.text-container{
-    display: flex;
-    flex-direction: column;
-    margin:auto;
+.vid-bg{
+    position: realtive;
     width: auto;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    border-radius: 50px;
+}
+
+
+.vid-bg video{
+    max-width: 45%;
+    height: 70%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.text-container{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+    width: 10%;
+    height: 60%;
+    z-index:1;
+    border-radius:25px;
+    text-align: center;
+    background: yellowgreen;
 }
 
 #myCanvas{
