@@ -27,7 +27,7 @@ body{
 }
 
 .vid-bg{
-    position: realtive;
+    position: relative;
     width: auto;
     max-width: 45%;
     display: flex;
