@@ -10,7 +10,12 @@ header{
     border-style: groove;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(51, 183, 39);
+
+    background: linear-gradient(to right, 
+        rgb(23, 97, 19),   /* darker left edge */
+        rgb(51, 183, 39),   /* main green in middle */
+        rgb(22, 89, 19)    /* darker right edge */
+    );
 }
 
 .cat{
