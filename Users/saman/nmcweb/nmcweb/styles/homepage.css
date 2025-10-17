@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll jitter with absolute canvas */
+html, body { overflow-x: hidden; }
+
+body{
+    font-family:"Share Tech Mono", monospace;
+    margin:0;
+    padding:0;
+    background-color: #ede8fe;
+}
+
+/* ------ HERO / INTRO ------ */
+.main-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lumia{
+    width:auto;
+    max-width: 50%;
+    margin-top:25px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+
+.vid-bg{
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    border-radius: 50px;
+}
+
+.vid-bg video{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text-container{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+    width: 10%;
+    height: 60%;
+    z-index:1;
+    border-radius:25px;
+    text-align: center;
+    background: yellowgreen;
+}
+
+/* ------ HYDRA SECTION (NEW) ------ */
+/* Wrap the posters + announcements in <section class="hydra-section"> */
+.hydra-section {
+    position: relative;     /* establishes stacking context */
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* Canvas lives only inside this section and sits behind content */
+.hydra-bg {
+    position: absolute;
+    inset: 0;               /* top/right/bottom/left: 0 */
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;             /* behind content */
+    pointer-events: none;   /* clicks go to content */
+}
+
+/* (Removed) #myCanvas and .hydra-container – not used anymore */
+/* #myCanvas{ ... }  */
+/* .hydra-container{ ... } */
+
+/* ------ CONTENT OVER HYDRA ------ */
+.intro{
+    font-family: "Share Tech Mono", monospace;
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.intro-blurb{
+    font-size: 18px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    z-index:1;
+}
+
+/* Ensure this container sits ABOVE the canvas */
+.body-container{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.event-scroll{
+    overflow-x: scroll;
+    width: 50%;
+    margin-top: 10px;
+    height: 400px;
+}
+
+.event-scroll img{
+    width: 200px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.event-scroll img:hover{
+    transform: scale(1.20);
+}
+
+.ann-container{
+    width:600px;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 5px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.ann-container h3{
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.ann-container p{
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.ann-1{
+    margin-left: 30px;
+    width:90%;
+    height: 30%;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: white;
+    border-block-start-color: #baaee6;
+    border-top-width: 5px;
+}
+
+.ann-2{
+    margin-left: 30px;
+    width:90%;
+    height: 30%;
+    margin-top: 5px;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: white;
+    border-block-start-color: #baaee6;
+    border-top-width: 5px;
+}
+
+.body-container h1{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+footer button{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: none;
+    background: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration:none;
+    cursor: pointer;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 70px;
+}
+
+/* Your page padding */
+body{
+    margin:0;
+    padding-top: 30px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+/* ------ RESPONSI VE ------ */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Logo {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .main-container {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .lumia {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .text-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: 28px;
+    }
+
+    .intro-blurb {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-scroll {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .event-scroll img {
+        width: 150px;
+    }
+
+    .ann-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer button {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .right-header {
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .Logo {
+        max-width: 50%;
+    }
+
+    .main-container {
+        flex-direction: row;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .lumia {
+        max-width: 45%;
+        margin: 10px 20px;
+    }
+
+    .text-container {
+        width: 50%;
+        text-align: left;
+    }
+
+    .intro {
+        font-size: 32px;
+    }
+
+    .intro-blurb {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .body-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .event-scroll {
+        width: 60%;
+        height: auto;
+    }
+
+    .event-scroll img {
+        width: 180px;
+    }
+
+    .ann-container {
+        width: 40%;
+    }
+
+    footer button {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 30px 220px;
+    }
+
+    header {
+        padding: 10px 40px;
+    }
+
+    .main-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 30px auto;
+    }
+
+    .lumia {
+        max-width: 50%;
+        margin: 25px;
+    }
+
+    .text-container {
+        width: auto;
+        text-align: left;
+    }
+
+    .intro {
+        font-size: 35px;
+    }
+
+    .intro-blurb {
+        font-size: 18px;
+        padding: 0 60px;
+    }
+
+    .body-container {
+        flex-direction: row;
+    }
+
+    .event-scroll {
+        width: 50%;
+        height: 400px;
+    }
+
+    .event-scroll img {
+        width: 200px;
+    }
+
+    .ann-container {
+        width: 600px;
+        margin: 0 30px;
+    }
+
+    footer button {
+        font-size: 70px;
+    }
+}
